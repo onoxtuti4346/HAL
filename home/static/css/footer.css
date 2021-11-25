@@ -1,0 +1,25 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #019cfe;
+}
+
+.footer ul{
+    padding-left: 0;
+}
+
+.list{
+    display: flex;
+	justify-content: center;
+}
+
+.footer li{
+	width: 100px;
+	height: 50px;
+	padding: 10px;
+	margin: 10px;
+}
+
+

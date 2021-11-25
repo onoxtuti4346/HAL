@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang=”ja”>
+<head>
+    <style>html, body, #map { width: 100%; height: 100%; }</style>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="{% static 'css/map.css' %} ">
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+
+    <!-- <script type="text/javascript" src="map2.1.js" charset="utf-8"></script>
+    <script type="text/javascript" src="map2.1_root.js" charset="utf-8"></script> -->
+</head>
+<body>
+{% include "_header.html" %}
+<div id="map"></div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZQf51oa9pT8V99_6i_HALI9Z2SZIM9yM&callback=initMap" async defer></script>
+{% include "_footernav.html" %}
+</body>
+<!-- <script src="{% static 'js/map_hf.js' %}"></script> -->
+</html>

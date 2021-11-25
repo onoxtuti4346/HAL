@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+.user_name{
+    display: inline-block;
+    padding-top: 5px;
+}
+
+
+.main{
+    height: 600px;
+    width: 100%;
+}
+
+.date{
+    float: right;
+    padding: 20px 40px 0 0;
+    font-size: 25px;
+}
+
+.static{
+    text-align: center;
+}
+
+.value{
+    display: inline-block;      
+    background-color:  #ccc;    
+    padding:  20px;             
+    height: 100px;              
+}
+
+
+
+

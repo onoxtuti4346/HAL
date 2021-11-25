@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+    <link rel="stylesheet" href="{% static 'css/header.css'%}">
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}">
+    <title>ホーム</title>
+</head>
+<body>
+    {% include "_header.html" %}
+    <div class="main">
+        <div class="date" id="date"></h1></div><br><br><br>
+        <div class="static">
+            <div class="value">
+                <h2>6ヶ月の平均</h2>
+            </div>
+            <div class="value">
+                <h2>今月の支払い</h2>
+            </div>
+        </div>
+    </div>
+    {% include "_footernav.html" %}
+</body>
+<script src="{% static 'js/app.js' %}"></script>
+</html>
